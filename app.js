@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
   });
 
 app.get('/', (req, res) => {
-    res.sendFile('./google016d3b90f91ff124.html', {root: __dirname});
+    res.sendFile('./public/index.html', {root: __dirname});
 });
 
 app.get('/get', (req, res) => {
