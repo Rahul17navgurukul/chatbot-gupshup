@@ -22,6 +22,10 @@ app.get('/get', (req, res) => {
     res.send(`Last Message Received --> ${lastMessageRecived}`);
 });
 
+app.get('/validation-redirect', (req, res) => {
+    res.send({ permission: true});
+});
+
 
 app.post('/send', (req, res, next) => {
     const reqBody = JSON.parse(req.body.messageobj)
